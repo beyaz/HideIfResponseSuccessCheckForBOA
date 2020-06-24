@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using ___.RegionsAreEvil.Configurations;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RegionsAreEvil.Classifications;
 
 namespace UnitTestProject1

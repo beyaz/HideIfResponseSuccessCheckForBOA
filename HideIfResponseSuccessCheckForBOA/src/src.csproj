@@ -18,7 +18,7 @@
     <ProjectGuid>{C52F5128-55C6-45B4-BF1B-A5376CF7C95F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JavaScriptRegions</RootNamespace>
+    <RootNamespace>___</RootNamespace>
     <AssemblyName>HideIfResponseSuccessCheckForBOA</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>

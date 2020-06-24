@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace RegionsAreEvil.Classifications
+namespace ___.RegionsAreEvil.Configurations
 {
     /// <summary>
     ///     The options reader

@@ -1,6 +1,6 @@
-﻿using RegionsAreEvil.Classifications;
+﻿using BOA.DataFlow;
 
-namespace BOA.DataFlow
+namespace ___.RegionsAreEvil.Configurations
 {
     public static class OptionData
     {

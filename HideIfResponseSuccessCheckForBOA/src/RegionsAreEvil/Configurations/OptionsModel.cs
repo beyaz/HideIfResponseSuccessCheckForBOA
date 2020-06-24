@@ -1,4 +1,4 @@
-﻿namespace RegionsAreEvil.Classifications
+﻿namespace ___.RegionsAreEvil.Configurations
 {
     /// <summary>
     ///     The options model

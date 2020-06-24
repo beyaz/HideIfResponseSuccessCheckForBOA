@@ -1,4 +1,5 @@
-﻿using BOA.DataFlow;
+﻿using ___.RegionsAreEvil.Configurations;
+using BOA.DataFlow;
 
 namespace RegionsAreEvil.Classifications
 {
