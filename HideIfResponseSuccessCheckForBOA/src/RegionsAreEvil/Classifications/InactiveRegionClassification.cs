@@ -1,13 +1,10 @@
-﻿// -----------------------------------------------------------------------
-// <copyright file="InactiveRegionClassification.cs" company="Equilogic (Pty) Ltd">
-//     Copyright © Equilogic (Pty) Ltd. All rights reserved.
-// </copyright>
-// -----------------------------------------------------------------------
+﻿using System;
+using BOA.DataFlow;
+using BOAPlugins.HideSuccessCheck;
 
-using System.Text;
-using System.Windows.Documents;
-
-
+namespace BOA.DataFlow
+{
+}
 namespace RegionsAreEvil.Classifications
 {
     using System.ComponentModel.Composition;
@@ -29,13 +26,14 @@ namespace RegionsAreEvil.Classifications
         // Methods
         public InactiveRegionClassification()
         {
-            if (!Options.MinimizeRegionsIsEnabled)
+            var option = OptionData.Context.Get(OptionData.Options);
+            if (!option.MinimizeRegionsIsEnabled)
             {
                 return;
             }
             ForegroundColor = Colors.Gray;
-            FontRenderingSize = Options.InActiveRegionSize;
-            ForegroundOpacity = Options.InActiveRegionOpacity;
+            FontRenderingSize = option.InActiveRegionSize;
+            ForegroundOpacity = option.InActiveRegionOpacity;
         }
 
         #endregion

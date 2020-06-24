@@ -1,8 +1,4 @@
-﻿// -----------------------------------------------------------------------
-// <copyright file="ActiveRegionClassification.cs" company="Equilogic (Pty) Ltd">
-//     Copyright © Equilogic (Pty) Ltd. All rights reserved.
-// </copyright>
-// -----------------------------------------------------------------------
+﻿using BOA.DataFlow;
 
 namespace RegionsAreEvil.Classifications
 {
@@ -25,14 +21,16 @@ namespace RegionsAreEvil.Classifications
         // Methods
         public ActiveRegionClassification()
         {
-            if (!Options.MinimizeRegionsIsEnabled)
+            var option = OptionData.Context.Get(OptionData.Options);
+
+            if (!option.MinimizeRegionsIsEnabled)
             {
                 return;
             }
 
             ForegroundColor = Colors.DarkGray;
-            FontRenderingSize = Options.ActiveRegionSize;
-            ForegroundOpacity = Options.ActiveRegionOpacity;
+            FontRenderingSize = option.ActiveRegionSize;
+            ForegroundOpacity = option.ActiveRegionOpacity;
         }
 
         #endregion

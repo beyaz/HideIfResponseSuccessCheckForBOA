@@ -10,7 +10,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void ShouldReadOptionFromFile()
         {
-            Assert.IsTrue(Options.IsReadFromFile);
+            Assert.IsNotNull(new OptionsReader().TryReadFromFile());
         }
         #endregion
     }

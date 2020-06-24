@@ -199,20 +199,7 @@ namespace UnitTestProject1
             Assert.IsTrue(data.Regions.Count > 0);
         }
 
-        [TestMethod]
-        public void TestLargeFile()
-        {
-            const string FilePath = @"D:\Work\BOA.BusinessModules\Dev\BOA.CardGeneral.DebitCard\BOA.Orchestration.CardGeneral.DebitCard\CardTransactionListForm.cs";
-
-            var data = new RegionParserTestData
-            {
-                SourceText = File.ReadAllText(FilePath)
-            };
-
-            RegionParser.Parse(data);
-
-            Assert.IsTrue(data.Regions.Count > 0);
-        }
+        
 
         [TestMethod]
         public void ShouldLogToTxtFile()

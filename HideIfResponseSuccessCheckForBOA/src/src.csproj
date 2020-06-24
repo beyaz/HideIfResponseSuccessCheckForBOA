@@ -60,7 +60,9 @@
     <Compile Include="RegionsAreEvil\Classifications\ClassificationFormatDefinition.cs" />
     <Compile Include="RegionsAreEvil\Classifications\ClassifierProvider.cs" />
     <Compile Include="RegionsAreEvil\Classifications\InactiveRegionClassification.cs" />
-    <Compile Include="RegionsAreEvil\Classifications\Options.cs" />
+    <Compile Include="RegionsAreEvil\Configurations\OptionData.cs" />
+    <Compile Include="RegionsAreEvil\Configurations\OptionsReader.cs" />
+    <Compile Include="RegionsAreEvil\Configurations\OptionsModel.cs" />
     <Compile Include="RegionsAreEvil\Constants.cs" />
     <Compile Include="RegionsAreEvil\RegionTextViewHandler.cs" />
     <Compile Include="RegionsAreEvil\Tags\RegionTag.cs" />
